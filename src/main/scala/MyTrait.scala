@@ -1,5 +1,5 @@
 trait MyTrait {
-  def GetMessage(): String = {
+  def getMessage(): String = {
     "Hello World"
   }
 }

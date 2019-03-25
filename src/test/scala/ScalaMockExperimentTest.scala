@@ -11,7 +11,7 @@ class ScalaMockExperimentTest extends FlatSpec with Matchers with MockFactory {
   "ScalaMockExperiment.doSomething(true)" should "return Foo Bar" in {
     val myMockTrait = mock[MyTrait]
 
-    (myMockTrait.GetMessage _) expects() returns("Foo Bar")
+    (myMockTrait.getMessage _) expects() returns("Foo Bar")
 
     val result = ScalaMockExperiment.doSomething(true)
     result shouldBe "Foo Bar"

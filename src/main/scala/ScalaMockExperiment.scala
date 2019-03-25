@@ -6,7 +6,7 @@ object ScalaMockExperiment extends MyTrait {
 
   def doSomething(input: Boolean): String = {
     if(input) {
-      GetMessage()
+      getMessage()
     } else {
       "Goodbye World"
     }
