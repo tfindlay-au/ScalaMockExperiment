@@ -1,12 +1,12 @@
 
-object ScalaMockExperiment extends MyTrait {
+object ScalaMockExperiment {
   def main(args: Array[String]): Unit = {
-    println(doSomething(true))
+    println(doSomething(input = true, new MessageWrapper))
   }
 
-  def doSomething(input: Boolean): String = {
+  def doSomething(input: Boolean, method: MessageWrapper): String = {
     if(input) {
-      getMessage()
+      method.getMessage
     } else {
       "Goodbye World"
     }
