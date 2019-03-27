@@ -12,12 +12,12 @@ Normal running executes the pattern:
 ScalaMockExperiment.main() -> ScalaMockExperiment.doSomething() -> MyTrait.GetMessage()
 
 ### Running
-```aidl
+```
 # sbt run
 Hello World
 ```
 
-```aidl
+```
 # sbt test
 ...
 [info] ScalaMockExperiment.doSomething(true)

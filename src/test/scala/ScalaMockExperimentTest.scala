@@ -4,7 +4,7 @@ import org.scalatest.{FlatSpec, Matchers}
 class ScalaMockExperimentTest extends FlatSpec with Matchers with MockFactory {
 
   "ScalaMockExperiment.doSomething(false)" should "return Goodbye World" in {
-    val defaultWrapper = new MessageWrapper
+    val defaultWrapper = MessageWrapper
     val result = ScalaMockExperiment.doSomething(input = false, defaultWrapper)
     result shouldBe "Goodbye World"
   }
